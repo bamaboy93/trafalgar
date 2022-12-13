@@ -1,0 +1,59 @@
+.hero-overlay {
+  &::before {
+    position: absolute;
+    top: 18%;
+    left: 0;
+    content: "";
+    width: 82px;
+    height: 115px;
+    background-image: url(../../images/element.png);
+  }
+}
+
+.hero {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 80px;
+  padding-bottom: 190px;
+}
+
+.hero__info {
+  width: 445px;
+}
+
+.hero__title {
+  margin-bottom: 25px;
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 1.17;
+  color: $black-text;
+}
+
+.hero__desc {
+  margin-bottom: 45px;
+  font-size: 21px;
+  line-height: 1.5;
+}
+
+.hero__button {
+  cursor: pointer;
+  padding: 0 40px;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2.7;
+  color: #ffffff;
+  background-color: $accent-color;
+  border-radius: 55px;
+  border: transparent;
+  outline: none;
+  transition: background-color 500ms ease, color 250ms ease, outline 500ms ease;
+
+  &:hover,
+  &:focus {
+    background-color: $main-bg-color;
+    outline: 2px solid $accent-color;
+    color: $grey-text;
+  }
+}

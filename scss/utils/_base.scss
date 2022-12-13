@@ -1,0 +1,49 @@
+body {
+  font-family: $font-family;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 1.6;
+  background-color: $main-bg-color;
+  color: $grey-text;
+}
+
+.wide-container {
+  width: 1300px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0px 25px;
+}
+.container {
+  width: 1120px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+h1,
+h2,
+h3,
+p {
+  margin: 0;
+}
+a {
+  display: block;
+  text-decoration: none;
+  color: inherit;
+}
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  border: 0;
+  clip: rect(0 0 0 0);
+}

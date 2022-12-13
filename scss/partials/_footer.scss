@@ -1,0 +1,79 @@
+.footer-overlay {
+  position: relative;
+  background: linear-gradient(183.41deg, #67c3f3 -8.57%, #5a98f2 82.96%);
+
+  &::before {
+    position: absolute;
+    bottom: -20px;
+    left: -20px;
+    content: "";
+    width: 132px;
+    height: 115px;
+    background-image: url(../../images/reviewD.png);
+  }
+  &::after {
+    position: absolute;
+    z-index: -1;
+    top: -70px;
+    right: 91px;
+    content: "";
+    width: 132px;
+    height: 115px;
+    background-image: url(../../images/servicesEl.png);
+  }
+}
+
+.footer {
+  padding: 110px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.footer__info {
+  width: 391px;
+}
+
+.footer__desc {
+  margin-top: 22px;
+  margin-bottom: 31px;
+  color: $white-text;
+}
+
+.footer__rights {
+  font-size: 16px;
+  line-height: 1.75;
+  color: $white-text;
+}
+
+.footer__actions {
+  display: flex;
+
+  &--company {
+    margin-right: 177px;
+  }
+  &--region {
+    margin-right: 166px;
+  }
+}
+
+.actions__title {
+  margin-bottom: 10px;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 3;
+  color: $white-text;
+}
+.actions__item:not(:last-child) {
+  margin-bottom: 10px;
+}
+
+.actions__link {
+  line-height: 2;
+  color: $white-text;
+  transition: color 500ms ease;
+  &:hover,
+  &:focus {
+    color: $hover-text;
+  }
+}
